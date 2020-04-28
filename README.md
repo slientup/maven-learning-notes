@@ -3,12 +3,12 @@ Maven学习笔记
 父项目子项目pom继承关系的依赖 https://www.jianshu.com/p/6215af9801a0
 
 #### 如何创建父项目子模块？
-先创建一个空的父项目，修改对应的pom文件  父项目必须为`pom`
+先创建一个空的`父项目`是项目，修改对应的pom文件  父项目必须为`pom`
 ```       
 	<packaging>pom</packaging>
 ```
-父项目 子模块的pom文件模板 见：https://github.com/EiletXie/cloud2020
-视频见：https://www.bilibili.com/video/BV18E411x7eT?p=9
+- 父项目 子模块的pom文件模板 见：https://github.com/EiletXie/cloud2020
+- 视频见：https://www.bilibili.com/video/BV18E411x7eT?p=9
 
 #### 在父模块pom中使用的导包方式: 作用是统一版本版本管理
 ```
