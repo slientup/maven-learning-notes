@@ -1,8 +1,8 @@
 Maven学习笔记
 
-0、父项目子项目pom继承关系的依赖 https://www.jianshu.com/p/6215af9801a0
+父项目子项目pom继承关系的依赖 https://www.jianshu.com/p/6215af9801a0
 
-##### 如何创建父项目子模块？
+#### 如何创建父项目子模块？
 先创建一个空的父项目，修改对应的pom文件  父项目必须为`pom`
 ```       
 	<packaging>pom</packaging>
@@ -10,7 +10,7 @@ Maven学习笔记
 父项目 子模块的pom文件模板 见：https://github.com/EiletXie/cloud2020
 视频见：https://www.bilibili.com/video/BV18E411x7eT?p=9
 
-##### 在父模块pom中使用的导包方式: 作用是统一版本版本管理
+#### 在父模块pom中使用的导包方式: 作用是统一版本版本管理
 ```
 <dependencyManagement>
   <dependencies>
@@ -20,7 +20,7 @@ Maven学习笔记
 ```
 子模块pom不会自动继承父模块pom中的jar包，**如果需要使用，就要给出 groupId 和 artifactId**
 无需给出 version，如果给出单独的版本以子模块为准**由父模块统一管理依赖的版本配置**
-##### 在父模块pom中使用的导包方式: 作用是统一版本版本管理
+#### 在父模块pom中使用的导包方式: 作用是统一版本版本管理
 ```
 <!-- 在父pom中的dependencies标签中的jar配置，子pom会直接继承 -->
 <depedencies>
